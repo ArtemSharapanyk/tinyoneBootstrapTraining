@@ -1,0 +1,46 @@
+.header-section{
+    min-height: 100vh;
+    background-color: $accent;
+    padding-top: 2%;
+    font-size: .5rem;
+
+    &__main-info-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 ;
+        margin: 0;
+    }
+
+    &__main-info-title{
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    &__main-info-desc{
+        margin: 5px 0;
+        color: $paragraf-color;
+    }
+
+    &__main-info-desc_important{
+        color: $main-color;
+    }
+
+
+
+    &__main-info-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+    &__main-info-platforms{
+        display: flex;
+        padding: 0;
+    }
+
+    &__main-info-platforms-item{
+        margin-right: 10px;
+    }
+}

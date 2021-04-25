@@ -1,3 +1,48 @@
-*{
-    background-color: #000;
+@import './fonts';
+@import './vars';
+@import './mixins/adaptiveFont.scss';
+
+
+html{
+    font-family: $defaulte-font;
+    color: $main-color;
+    @include adaptiv-font(40, 30);
+    line-height: 1.30 !important;
 }
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation{
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link{
+        font-weight: 700;
+        transition: .2s ease-in;
+        
+        &:hover{
+            color: $white-decorated;
+        }
+    }
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+//blocks
+@import './blocks/header.scss';
+
+
+@import './libs';
