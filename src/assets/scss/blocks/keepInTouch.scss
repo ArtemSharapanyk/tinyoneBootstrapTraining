@@ -1,0 +1,46 @@
+.contact-section{
+    background-color: #000;
+    font-size: 0.5rem;
+
+    &__title{
+        color: $accent;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__description{
+        text-align: center;
+        color: $paragraf-color;
+        margin: 0 auto;
+    }
+
+    &__input-box{
+        display: flex;
+        margin: 40px auto;
+        justify-content: center;
+    }
+
+    &__btn-submit{
+        background-color: $accent;
+        color: #000;
+        height: 100%;
+        width: 15%;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        transition: .2s ease-in;
+
+        &:hover{
+            background-color: darken($color: $accent, $amount: 10%)
+        }
+    }
+
+    &__input-control{
+        padding: 10px;
+        width: 70%;
+    }
+}

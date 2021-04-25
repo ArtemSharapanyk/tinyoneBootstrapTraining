@@ -10,6 +10,15 @@ html{
     line-height: 1.30 !important;
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darken($color: $accent, $amount: 10%);
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -18,6 +27,14 @@ ul{
 a{
     text-decoration: none;
     color: #000;
+}
+
+section {
+    padding: 5% 0;
+}
+
+.title{
+    text-align: center;
 }
 
 .navigation{
@@ -41,8 +58,22 @@ a{
     margin-top: 30px;
 }
 
+footer{
+    font-size: 0.4em;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
 //blocks
 @import './blocks/header.scss';
+@import './blocks/features.scss';
+@import './blocks/keepInTouch.scss';
+
+@import './media.scss';
 
 
 @import './libs';

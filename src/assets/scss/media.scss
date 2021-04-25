@@ -1,0 +1,38 @@
+@media screen and (max-width: 576px) {
+    .features-section__card{
+        font-size: 1em;
+        margin-top: 10px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $paragraf-color;
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    .contact-section{
+        &__input-box{
+            margin: 20px auto;
+        }
+    }
+}
+
+@media screen and (max-width:376px) {
+    .contact-section{
+        &__btn-submit{
+            width: 20%;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1400px) {
+    .header-section{
+        min-height:700px;
+    }
+}

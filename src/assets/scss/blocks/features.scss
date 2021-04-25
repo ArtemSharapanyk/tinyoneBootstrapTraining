@@ -1,0 +1,41 @@
+.features-section{
+    font-size: 0.7rem;
+
+    .title{
+        margin-top: 0;
+    }
+
+    &__description{
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    & > .box{
+        text-align: center;
+    }
+
+    &__card{
+        font-size: 0.6em;
+        display: flex;
+        justify-content: center;
+
+        &-icon{
+            width: 20px;
+            height: 10px;
+        }
+
+        &_bottom{
+            margin-top: 20px;
+        }
+
+        &-title{
+            .title{
+                text-align-last: left;
+            }
+        }
+    }
+
+    &__card-description{
+        color: $paragraf-color;
+    }
+}
